@@ -20,7 +20,7 @@ public:
   int subarraySum(vector<int> &nums, int k) {
     int ans = 0;
     int curr = 0;
-    // number of ways to make a sum using an arbitrary subarray
+    // number of ways to make a sum using a arbitrary subarray
     // sum      -     (sum-k)       =         k
     // ^total sum     ^sum before subarray    ^desired sum
     unordered_map<int, int> sums{};

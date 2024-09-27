@@ -6,6 +6,7 @@
 
 #include <cstdint>
 #include <iostream>
+using namespace std;
 
 class Solution {
 public:
@@ -44,4 +45,13 @@ public:
     }
     return count;
   }
+
+  int solution3(uint32_t n) { return __builtin_popcount(n); }
 };
+
+int main() {
+  Solution s;
+  uint32_t n = 12903;
+  cout << s.hammingWeight(n) << ", " << s.solution2(n) << ", " << s.solution3(n)
+       << endl;
+}
